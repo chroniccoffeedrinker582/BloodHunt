@@ -194,7 +194,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60afe1a3d35ef274bb7d7349c5f45612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 15
+  groundDrag: 5
+  playerHeight: 5
+  Ground:
+    serializedVersion: 2
+    m_Bits: 256
   orientation: {fileID: 2141124282}
 --- !u!1 &306259810
 GameObject:
@@ -318,7 +323,7 @@ GameObject:
   - component: {fileID: 370433968}
   - component: {fileID: 370433967}
   - component: {fileID: 370433966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +477,7 @@ GameObject:
   - component: {fileID: 609479948}
   - component: {fileID: 609479947}
   - component: {fileID: 609479946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +769,7 @@ GameObject:
   - component: {fileID: 1066790766}
   - component: {fileID: 1066790765}
   - component: {fileID: 1066790764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -997,7 +1002,7 @@ GameObject:
   - component: {fileID: 1872753361}
   - component: {fileID: 1872753360}
   - component: {fileID: 1872753359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
