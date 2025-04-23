@@ -10,6 +10,11 @@ public class PlayerMove : MonoBehaviour
 
     public float groundDrag;
 
+    public float jumpForce;
+    public float jumpCooldown;
+    public float airMultiplier;
+    bool readyToJump;
+
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask Ground;
@@ -61,5 +66,10 @@ public class PlayerMove : MonoBehaviour
     private void FixedUpdate()
     {
         movePlayer();  
+    }
+    
+    private void Jump()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.y)
     }
 }
